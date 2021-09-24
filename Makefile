@@ -39,7 +39,8 @@ $(BINDIR)wstcpproxy: $(INCDIR)constants.hpp $(TARGETS)
 	$(CPP) $(CPPFLAGS) -o $(BINDIR)wstcpproxy \
 		$(OBJDIR)wstcpproxy.o \
 		$(OBJDIR)ws_listener.o \
-		$(OBJDIR)tcp_listener.o
+		$(OBJDIR)tcp_listener.o \
+		$(LDLIBS)
 
 ###############################################################################
 # Object recipes are defined below.

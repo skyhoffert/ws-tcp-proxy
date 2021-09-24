@@ -4,4 +4,6 @@
 
 static const char kRevision[] = "RevA1";
 
+static const int kAddrOutLen = 40;
+
 #endif
